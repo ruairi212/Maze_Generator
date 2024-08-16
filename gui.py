@@ -8,7 +8,9 @@ class Window:
         self.canvas = Canvas(width=width, height=height)
         self.run = False
         self.canvas.pack()
-    
+    def draw_line(self, line, fill_color="black"):
+        line.draw(self.canvas, fill_color)
+
     def redraw(self):
         self.__root.update_idletasks()
         self.__root.update()

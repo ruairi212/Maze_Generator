@@ -38,6 +38,6 @@ class Cell:
         if undo:
             fill_color = "gray"
 
-        line = Line(Point(x_centre, y_centre), Point(x_centre2, y_centre2))
-        self._win.draw_line(line, fill_color)
+        Line = line(Point(x_centre, y_centre), Point(x_centre2, y_centre2))
+        self._win.draw_line(Line, fill_color)
 
